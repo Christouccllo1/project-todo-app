@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
 body{
   width: 100vw;
   
@@ -19,7 +24,7 @@ nav a{
   margin: 0 2%;
 }
 main{
-  background-color: aqua;
+  
   height: 80vh;
   width: 100%;
   display: flex;
@@ -27,7 +32,33 @@ main{
   align-items: center;
 }
 .app-container{
-  width: 60%;
-  background-color: blue;
+  width: 50%;
+  
   height: 80%;
 }
+.InputTask {
+  
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  align-items: center;
+  width: 100%;
+}
+
+.InputTask input{
+  border: none;
+  margin: 2vw;
+  padding: 1vw 2vw;
+  background-color: aliceblue;
+}
+.Todos{
+  
+  height: 80%;
+}
+
+.Todo{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+}
+
