@@ -4,10 +4,11 @@ import './App.css';
 import { useState } from 'react';
 import Header from './Components/Header';
 import InputTask from './Components/InputTask';
-import Todos from './Components/Todos';
+import Results from './Components/Results';
+
 
 function App() {
-  // const [Todos, setTodos] = useState([])
+  const [Todos, setTodos] = useState([])
   const [InputTodo, setInputTodo] = useState("")
 
   let addTodo = (task) => {
@@ -16,20 +17,26 @@ function App() {
       Task: task,
       statusType: "active"
     }
+
+    setTodos([...Todos,todo])
   }
 
   let handleChange = (e) => {
     setInputTodo(e.target.value)
   }
 
+  let handleClick=()=>{
+    addTodo(InputTodo)
+
+  }
   return (
     <div className="App">
-      <h1>{InputTodo}</h1>
+      
       <Header></Header>
       <main>
         <div className="app-container">
-          <InputTask handleChange={handleChange}></InputTask>
-          <Todos></Todos>
+          <InputTask handleChange={handleChange} handleClick={handleClick}></InputTask>
+          <Results todos={Todos}></Results>
         </div>
       </main>
     </div>

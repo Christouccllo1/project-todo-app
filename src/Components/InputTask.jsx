@@ -3,7 +3,7 @@ function InputTask(props){
         <div className="InputTask">
             <input type="text" onChange={(e)=>props.handleChange(e)} />
 
-            <button>Add Task</button>
+            <button onClick={()=>props.handleClick()}>Add Task</button>
         </div>
     )
 }

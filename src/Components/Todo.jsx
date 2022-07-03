@@ -1,7 +1,9 @@
-function Todo(){
+
+
+function Todo(props){
     return(
         <div className="Todo">
-            <p>Sample Todo</p>
+            <p>{props.item.Task}</p>
             <button>Edit</button>
             <button>Delete</button>
         </div>
