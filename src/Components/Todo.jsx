@@ -1,12 +1,15 @@
 
 
-function Todo(props){
-    return(
-        <div className="Todo">
-            <p>{props.item.Task}</p>
-            <button>Edit</button>
-            <button>Delete</button>
-        </div>
+function Todo(props) {
+    return (
+        <tr className="Todo">
+            <td className="Task">{props.item.Task}</td>
+            <td className="Action">
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+
+        </tr>
     )
 }
 export default Todo

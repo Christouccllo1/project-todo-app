@@ -62,3 +62,12 @@ main{
   justify-content: space-around;
 }
 
+table{
+  background-color: blue;
+}
+
+.Task{
+  width: 30vw;
+
+
+}
