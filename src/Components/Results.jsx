@@ -3,25 +3,17 @@ import Todo from "./Todo"
 function Results(props) {
   return (
     <div className="Todos">
-      <table>
-        <tr>
-          <th>Task</th>
-          <th>Actions</th>
-        </tr>
+        <div className="todo head">
+          <h2>Tasks</h2>
+          <h2>Actions</h2>
+        </div>
         {
           props.todos.map(task => {
             return (
-
-
               <Todo item={task} key={task.id}></Todo>
             )
           })
         }
-
-
-      </table>
-
-
     </div>
   )
 }

@@ -1,14 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
-
 }
-body{
+
+body {
   width: 100vw;
-  
-
 }
-header{
+
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,28 +15,29 @@ header{
   height: 10vh;
   background-color: rgb(9, 22, 46);
 }
-nav a{
+
+nav a {
   text-decoration: none;
   color: aliceblue;
   padding: 2% 6%;
   font-size: 1.5vw;
   margin: 0 2%;
 }
-main{
-  
+
+main {
   height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.app-container{
+
+.app-container {
   width: 50%;
-  
   height: 80%;
 }
+
 .InputTask {
-  
   display: flex;
   justify-content: center;
   height: 20%;
@@ -45,29 +45,50 @@ main{
   width: 100%;
 }
 
-.InputTask input{
+.InputTask input {
   border: none;
   margin: 2vw;
   padding: 1vw 2vw;
   background-color: aliceblue;
 }
-.Todos{
-  
+
+.Todos {
   height: 80%;
+  background-color: aliceblue;
+  padding: 2vw;
+  overflow: scroll;
 }
 
-.Todo{
-  background-color: aquamarine;
+.todo {
+  background-color: rgb(94, 183, 241);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vw;
+  padding: 2vw;
 }
 
-table{
-  background-color: blue;
+.todo h4 {
+  width: 50%;
+  font-size: 1vw;
 }
 
-.Task{
+.todo h2 {
+  font-size: 2vw;
+}
+
+.head {
+  background-color: rgb(9, 22, 46);
+  color: aliceblue;
+}
+
+.Task {
   width: 30vw;
+}
 
-
+.todo button {
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 5px;
+  background-color: aliceblue;
 }
