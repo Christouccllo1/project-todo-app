@@ -27,6 +27,7 @@ function App() {
 
   let handleClick=()=>{
     addTodo(InputTodo)
+    document.querySelector('.InputTask input').value=""
 
   }
 

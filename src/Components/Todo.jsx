@@ -7,7 +7,7 @@ function Todo(props) {
             <h4>{props.item.Task}</h4>
 
             
-            <button onClick={()=>props.handleDelete(props.item.id)}>Delete</button>
+            <button onClick={()=>props.handleDelete(props.item.id)}><i class="fa-solid fa-trash-can fa-2x"></i></button>
         </div>
     )
 }
