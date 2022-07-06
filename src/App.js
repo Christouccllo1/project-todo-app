@@ -29,6 +29,12 @@ function App() {
     addTodo(InputTodo)
 
   }
+
+  let handleDelete=(id)=>{
+    let filteredTodos=Todos.filter(el=>el.id!==id)
+    setTodos(filteredTodos)
+
+  }
   return (
     <div className="App">
       
@@ -36,7 +42,7 @@ function App() {
       <main>
         <div className="app-container">
           <InputTask handleChange={handleChange} handleClick={handleClick}></InputTask>
-          <Results todos={Todos}></Results>
+          <Results todos={Todos} handleDelete={handleDelete}></Results>
         </div>
       </main>
     </div>

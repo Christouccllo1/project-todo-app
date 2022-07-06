@@ -10,7 +10,7 @@ function Results(props) {
         {
           props.todos.map(task => {
             return (
-              <Todo item={task} key={task.id}></Todo>
+              <Todo item={task} key={task.id} handleDelete={props.handleDelete}></Todo>
             )
           })
         }
