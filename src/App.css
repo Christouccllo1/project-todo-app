@@ -46,10 +46,19 @@ main {
 }
 
 .InputTask input {
-  border: none;
+  border: solid 2px rgb(9, 22, 46);
   margin: 2vw;
   padding: 1vw 2vw;
   background-color: aliceblue;
+  color: rgb(9, 22, 46);
+}
+
+.InputTask button{
+  padding: 1vw 2vw;
+  background-color: rgb(9, 22, 46);
+  color: aliceblue;
+  margin: 2vw;
+  border: none;
 }
 
 .Todos {
