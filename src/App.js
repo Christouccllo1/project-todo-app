@@ -10,6 +10,9 @@ import Results from './Components/Results';
 function App() {
   const [Todos, setTodos] = useState([])
   const [InputTodo, setInputTodo] = useState("")
+  const [InProgressTodos, setInProgressTodos] = useState([])
+  const [CompletedTodos, setCompletedTodos] = usesState([])
+  
 
   let addTodo = (task) => {
     let todo = {
