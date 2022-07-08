@@ -2,6 +2,8 @@ import Todo from "./Todo"
 
 function Results(props) {
   return (
+
+  
     <div className="Todos">
         <div className="todo head">
           <h2>Tasks</h2>
@@ -10,7 +12,7 @@ function Results(props) {
         {
           props.todos.map(task => {
             return (
-              <Todo item={task} key={task.id} handleDelete={props.handleDelete}></Todo>
+              <Todo item={task} key={task.id} handleDelete={props.handleDelete} handleChange={props.handleSelectChange}></Todo>
             )
           })
         }
