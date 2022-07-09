@@ -124,12 +124,7 @@ function App() {
 
         <Header></Header>
         <main>
-          <div className="routes">
-            <Link to="/" className="link">Todos</Link>
-            <Link to="/Inprogress" className="link">In Progress</Link>
-            <Link to="/Completed" className="link">Completed</Link>
 
-          </div>
           <div className="app-container">
 
             <InputTask handleChange={handleChange} handleClick={handleClick}></InputTask>
@@ -143,6 +138,12 @@ function App() {
 
           </div>
         </main>
+        <div className="routes">
+          <Link to="/" className="link">Todos</Link>
+          <Link to="/Inprogress" className="link">In Progress</Link>
+          <Link to="/Completed" className="link">Completed</Link>
+
+        </div>
       </div>
     </Router>
 

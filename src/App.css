@@ -25,7 +25,7 @@ nav a {
 }
 
 main {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -80,11 +80,11 @@ main {
 
 .todo h4 {
   width: 50%;
-  font-size: 1vw;
+  font-size: .75vw;
 }
 
 .todo h2 {
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .head {
@@ -101,4 +101,19 @@ main {
   border: none;
   border-radius: 5px;
   background-color: aliceblue;
+}
+
+.routes {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.routes .link {
+  text-decoration: none;
+  color: rgb(9, 22, 46);
+  margin: 1vw;
+  background-color: rgb(194, 218, 253);
+  padding: 1vw 2vw;
 }
