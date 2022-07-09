@@ -14,7 +14,7 @@ function App() {
   const [InputTodo, setInputTodo] = useState("")
   const [InProgressTodos, setInProgressTodos] = useState([])
   const [CompletedTodos, setCompletedTodos] = useState([])
-
+  const [active, setActive] = useState("all")
 
 
 
@@ -139,9 +139,9 @@ function App() {
           </div>
         </main>
         <div className="routes">
-          <Link to="/" className="link">Todos</Link>
-          <Link to="/Inprogress" className="link">In Progress</Link>
-          <Link to="/Completed" className="link">Completed</Link>
+            <Link to = "/" className="link" onClick={() => setActive("all")} style={active === "all" ? {backgroundColor: "#09162e", color: "aliceblue"}: {backgroundColor:"#c2dafd", color:"#09162e"}}>Todos</Link>
+            <Link to = "/Inprogress" className="link" onClick={() => setActive("inprogress")} style={active === "inprogress" ? {backgroundColor: "#09162e", color: "aliceblue"}: {backgroundColor:"#c2dafd", color:"#09162e"}}>In Progress</Link>
+            <Link to = "/Completed" className="link" onClick={() => setActive("completed")} style={active === "completed" ? {backgroundColor: "#09162e", color: "aliceblue"}: {backgroundColor:"#c2dafd", color:"#09162e"}}>Completed</Link>
 
         </div>
       </div>
